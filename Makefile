@@ -2,10 +2,10 @@ IMAGE_NAME=alpine-nginx-playground
 
 all: build run
 
-build: rmi
+build: shutdown
 	-@docker build -t $(IMAGE_NAME) .
 
-rmi: stop
+shutdown: stop
 	-@docker rmi $(IMAGE_NAME)
 
 run:

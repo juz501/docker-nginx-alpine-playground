@@ -6,3 +6,10 @@ matrix:
     - language: php
       php:
         - 7.0
+install:
+  - travis_retry curl -s http://getcomposer.org/installer | php
+  - travis_retry php composer.phar install --no-interaction
+  
+scripts:
+  - mkdir -p tests/logs
+  - php vendor/bin/phpunit

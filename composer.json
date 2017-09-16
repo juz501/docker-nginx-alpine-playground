@@ -1,0 +1,29 @@
+{
+    "name":        "juz501/docker-nginx-alpine-playground",
+    "description": "trying out docker",
+    "homepage":    "https://github.com/juz501/docker-nginx-alpine-playground",
+    "license":     "GPL-3.0",
+    "authors": [
+      {
+        "name": "Julian Chan",
+        "email": "julianc@gmail.com",
+        "homepage": "https://github.com/juz501"
+      }
+    ],
+    "support": {
+      "issues": "https://github.com/juz501/docker-nginx-alpine-playground/issues",
+      "wiki": "https://github.com/juz501/docker-nginx-alpine-playground/wiki",
+      "source": "https://github.com/juz501/docker-nginx-alpine-playground"
+    },
+    "keywords": [
+      "php",
+      "docker",
+      "nginx"
+    ],
+    "require": {
+      "php": ">=7.0.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^6.2"
+    }
+  }

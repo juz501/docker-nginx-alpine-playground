@@ -9,17 +9,19 @@ cache:
 php:
   - 7.1
 
+node_js:
+  - 6
+
 git:
   depth: 1
 
 matrix:
   include:
-    - language: node_js
-      node_js:
-        - 6
-    - language: php
-      php:
-        - 7.1
+    - dist: precise
+      php: 7.1
+  fast_finish: true
+  allow_failures:
+    - php: nightly
 
 install:
   - travis_retry curl -s http://getcomposer.org/installer | php

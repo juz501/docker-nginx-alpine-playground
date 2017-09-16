@@ -6,6 +6,8 @@ $default-padding: 20px;
 $default-margin: 10px;
 $heading-font: Verdana, sans-serif;
 $default-font: Arial, Helvetica, sans-serif;
+$mobile-breakpoint: 430px;
+$desktop-breakpoint: 1080px;
 
 * {
     margin:0;
@@ -16,7 +18,12 @@ $default-font: Arial, Helvetica, sans-serif;
 html,
 body {
     font-family: #{$default-font};
+    font-size: 12px;
     line-height: 1.5;
+    background-color: black;
+    @media screen and (min-width: #{$mobile-breakpoint}) {
+        font-size: 16px;
+    }
 }
 
 header,
@@ -25,6 +32,11 @@ footer {
     max-width: #{$max-width};
     width: calc(100% - #{$gutter-width});
     margin: 0 auto;
+}
+
+section,
+footer {
+    background-color: white;
 }
 
 section {
@@ -41,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 ol, ul {
@@ -52,4 +65,47 @@ ol, ul {
 img {
     border: 0;
     vertical-align: top;
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        line-height: 0;
+        content: "";
+        display:block;
+        height: 0;
+        clear: both;
+    }
+}
+
+ul.list {
+    list-style: none;
+    max-width: 1016px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    @media screen and (min-width: #{$desktop-breakpoint}) {
+        text-align: left;
+    }
+}
+
+ul.list li {
+    max-width: 100%;
+    display: inline-block;
+    @media screen and (min-width: #{$mobile-breakpoint}) {
+        max-width: 350px;
+    }
+}
+
+ul.list li img {
+    width: 100%;
+    height: auto;
+    @media screen and (min-width: #{$mobile-breakpoint}) {
+        width: auto;
+    }
+}
+
+ul.list li span {
+    display: block;
+    text-align: center;
 }

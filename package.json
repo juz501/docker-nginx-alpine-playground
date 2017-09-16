@@ -16,6 +16,7 @@
   "author": "Julian Chan",
   "license": "GPL-3.0",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "node-sass": "^4.5.3"
   }
 }

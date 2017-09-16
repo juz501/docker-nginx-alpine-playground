@@ -15,9 +15,6 @@ stop:
 	-@docker ps | grep $(IMAGE_NAME) | awk '{ print $$1 }' | xargs docker stop > /dev/null
 	-@docker ps -a | grep $(IMAGE_NAME) | awk '{ print $$1 }' | xargs docker rm > /dev/null
 
-sasswatch: node_modules/node-sass/bin/node-sass
-	node node_modules/node-sass/bin/node-sass --output dist/css --watch assets/scss/styles.scss
-
 images: dist/images/*
 
 dist/images/*:

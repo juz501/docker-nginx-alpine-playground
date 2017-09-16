@@ -1,2 +1,6 @@
-FROM nginx:alpine
-COPY . /usr/share/nginx/html
+FROM php:7.0-fpm-alpine
+
+ENV PROJECT_ROOT /html
+
+COPY . $PROJECT_ROOT
+WORKDIR $PROJECT_ROOT

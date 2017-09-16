@@ -1,0 +1,16 @@
+version: "2"
+services:
+  php:
+    image: alpine-nginx-playground:latest
+    restart: always
+    volumes:
+      - ./:/html
+  
+  webserver:
+    image: nginx:alpine
+    restart: always
+    ports: 
+      - "8080:80"
+    volumes:
+      - ./:/html
+      - ./etc/nginx/default.conf:/etc/nginx/conf.d/default.conf

@@ -9,9 +9,10 @@ shutdown: stop
 	-@docker rmi $(IMAGE_NAME)
 
 run:
-	-@docker run --name some-nginx -d -p 8080:80 $(IMAGE_NAME)
+	-@docker-compose up
 
 stop:
+	-@docker-compose down
 	-@docker ps | grep $(IMAGE_NAME) | awk '{ print $$1 }' | xargs docker stop > /dev/null
 	-@docker ps -a | grep $(IMAGE_NAME) | awk '{ print $$1 }' | xargs docker rm > /dev/null
 

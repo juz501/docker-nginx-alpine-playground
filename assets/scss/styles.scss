@@ -48,3 +48,8 @@ ol, ul {
     margin-top: #{$default-margin};
     margin-bottom: #{$default-margin};
 }
+
+img {
+    border: 0;
+    vertical-align: top;
+}

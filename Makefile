@@ -21,8 +21,3 @@ images: dist/images/*
 dist/images/*:
 	mkdir -p dist/images
 	cp assets/images/* dist/images/
-
-
-node_modules/node-sass/bin/node-sass:
-	mkdir -p dist/css
-	npm prune && npm install

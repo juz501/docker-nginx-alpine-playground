@@ -9,7 +9,7 @@ shutdown: stop
 	-@docker rmi $(IMAGE_NAME)
 
 run:
-	-@docker-compose up
+	-@docker-compose up -d
 
 stop:
 	-@docker-compose down

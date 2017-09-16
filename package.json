@@ -1,0 +1,22 @@
+{
+  "name": "joshuas-homepage",
+  "version": "1.0.0",
+  "description": "Joshua's Homepage",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass --output dist assets/styles.scss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/juz501/docker-nginx-alpine-playground"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Julian Chan",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

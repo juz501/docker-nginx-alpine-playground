@@ -1,0 +1,50 @@
+$heading-color: #3e3e3e;
+$border-color: rgba($heading-color, 0.5);
+$max-width: 1200px;
+$gutter-width: 40px;
+$default-padding: 20px;
+$default-margin: 10px;
+$heading-font: Verdana, sans-serif;
+$default-font: Arial, Helvetica, sans-serif;
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: #{$default-font};
+    line-height: 1.5;
+}
+
+header,
+section,
+footer {
+    max-width: #{$max-width};
+    width: calc(100% - #{$gutter-width});
+    margin: 0 auto;
+}
+
+section {
+    margin-top: #{$default-margin};
+    margin-bottom: #{$default-margin};
+    border: 1px solid #{$border-color};
+    padding: #{$default-padding};
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: #{$heading-font};
+    color: #{$heading-color};
+}
+
+h1 {
+    text-align: center;
+}
+
+ol, ul {
+    list-style: inside;
+    margin-top: #{$default-margin};
+    margin-bottom: #{$default-margin};
+}

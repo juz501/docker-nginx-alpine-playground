@@ -2,7 +2,7 @@ IMAGE_NAME=alpine-nginx-playground
 
 all: build run
 
-build: shutdown
+build: shutdown images
 	-@docker build -t $(IMAGE_NAME) .
 
 shutdown: stop

@@ -4,7 +4,6 @@
   "description": "Joshua's Homepage",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass --output dist assets/styles.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

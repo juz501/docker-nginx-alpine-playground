@@ -2,7 +2,7 @@ IMAGE_NAME=alpine-nginx-playground
 
 all: build run
 
-build: shutdown
+build: shutdown sass
 	-@docker build -t $(IMAGE_NAME) .
 
 shutdown: stop
@@ -13,3 +13,6 @@ run:
 stop:
 	-@docker ps | grep $(IMAGE_NAME) | awk '{ print $$1 }' | xargs docker stop > /dev/null
 	-@docker ps -a | grep $(IMAGE_NAME) | awk '{ print $$1 }' | xargs docker rm > /dev/null
+
+sass:
+	node node_modules/node-sass/bin/node-sass --output dist assets/styles.scss

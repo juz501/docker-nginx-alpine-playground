@@ -4,7 +4,7 @@
   convertErrorsToExceptions="true"
   convertNoticesToExceptions="true"
   convertWarningsToExceptions="true"
-  bootstrap="./index.php"
+  bootstrap="vendor/autoload.php"
   verbose="true"
 >
 

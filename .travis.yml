@@ -19,7 +19,10 @@ matrix:
     - language: node_js
       node_js:
         - 6
-        
+    - language: php
+      php:
+        - 7.1
+
 install:
   - travis_retry curl -s http://getcomposer.org/installer | php
   - travis_retry php composer.phar install --no-interaction

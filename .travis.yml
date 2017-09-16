@@ -29,4 +29,4 @@ install:
   
 scripts:
   - mkdir -p tests/logs
-  - php vendor/bin/phpunit
+  - npm run tests

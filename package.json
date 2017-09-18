@@ -4,6 +4,7 @@
   "description": "Joshua's Homepage",
   "main": "index.html",
   "scripts": {
+    "sasswatch": "node-sass --output ./dist --watch assets/scss/styles.css",
     "test": "mocha tests/spec.js"
   },
   "repository": {

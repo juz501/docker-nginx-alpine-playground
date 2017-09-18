@@ -1,4 +1,5 @@
-<!-- 
+<?php
+/* 
     Docker Nginx Alpine Playground - Learning the art of docker
     Copyright (C) 2017 Julian Chan
 
@@ -14,7 +15,7 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. 
---><!DOCTYPE html>
+*/ ?><!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Joshua's Homepage</title>
